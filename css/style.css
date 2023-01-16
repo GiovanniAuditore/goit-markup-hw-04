@@ -20,7 +20,8 @@ html {
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 body{
     font-family: "Roboto";
@@ -29,7 +30,15 @@ ul {
     list-style: none;
 }
 
-a:link { text-decoration: none; 
+a:link { 
+    text-decoration: none; 
+
+}
+
+.site-nav, .address {
+display: flex;
+flex-direction: row;
+
 }
 
 .logo{
@@ -42,6 +51,7 @@ a:link { text-decoration: none;
     text-transform: uppercase;
     background-color: #fff;
     color: var(--main-text-color);
+    margin-right: 70px;
 }
 .web {
     color: var(--sec-text-color);
@@ -60,6 +70,7 @@ font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
+margin-right: 40px;
 }
 .address {
     background-color: #fff;
@@ -70,17 +81,18 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 margin: 0;
 }
+
+
 .bigtext{
     color: #fff;
-    background-color: var(--sec-text-color);
     font-weight: 600;
 font-size: 56px;
 line-height: 1.1;
 /* or 107% */
-text-align: center;
 letter-spacing: 0.02em;
 margin-top: 0;
-margin-bottom: 48px;
+
+
 }
 .orderbtn {
     color: #fff;
@@ -96,8 +108,15 @@ border-radius: 4px;
 padding: 16px 32px;
 min-width: 170px;
 margin-top: 0;
-margin-bottom: 192px;
+margin-bottom: 192px; 
 }
+
+
+.effectivesection {
+    text-align: center;
+background-color: var(--main-text-color)
+}
+
 .maintext{
     background-color: #fff;
     color:var(--main-text-color) ;
@@ -136,7 +155,7 @@ margin-bottom: 72px;
 }
 .imagesforquestion{
     margin-top: 0;
-margin-bottom: 240px;
+margin-bottom: 120px;
 }
 .cloud {
     background-color: var(--cloud-text-color);
@@ -156,8 +175,9 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 margin-top: 0;
-margin-bottom: 72px;
+margin-bottom: 0;
 }
+
 
 .cloud.name {
     color: var(--main-text-color);
@@ -185,15 +205,7 @@ padding-bottom: 120px;
 
 
 }
-.footlogo{
-    font-family: 'Raleway';
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.30;
-    /* identical to box height, or 133% */
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
+
 
 .foot{
     background-color: var(--main-text-color);
@@ -208,6 +220,13 @@ color: var(--cloud-text-color);
 background-color: #2E2F42;
 margin-top: 0;
 margin-bottom: 16px;
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.30;
+/* identical to box height, or 133% */
+letter-spacing: 0.03em;
+text-transform: uppercase;
 }
 
 .footlogo.web {
@@ -273,6 +292,7 @@ font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
+margin: 0;
 }
 
 
@@ -335,6 +355,10 @@ mix-blend-mode: normal;
 
 
 .footlogop{
+    color: var(--cloud-text-color);
+    background-color: #2E2F42;
+    margin-top: 0;
+    margin-bottom: 16px;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -342,18 +366,21 @@ mix-blend-mode: normal;
     /* identical to box height, or 133% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--cloud-text-color);
-background-color: #2E2F42;
 }
 
 .footp{
     background-color: var(--main-text-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
+    padding-right: 1020px;
 }
 
 
 .footlogo.webp {
 color: var(--sec-text-color);
 background-color: #2E2F42;
+
 }
 
 .foottextp {
@@ -365,5 +392,6 @@ letter-spacing: 0.02em;
 
 /* CORNFLOWER */
 color: #E7E9FC;
+width: 264px;
+height: 72px;
 }
-
