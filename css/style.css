@@ -35,11 +35,27 @@ a:link {
 
 }
 
-.site-nav, .address {
-display: flex;
-flex-direction: row;
-
+.buttons, .address {
+    display: flex;
+    flex-direction: row;
 }
+.buttons li {
+   margin-right: 40px;
+}
+
+.buttons.mr {
+    margin-right: 0;
+}
+
+
+
+    .site-nav {
+        display: flex;
+        align-items: center;
+    }
+    .site-nav .item:last-child{
+        margin-right: 0;
+    }
 
 .logo{
     font-family: 'Raleway';
@@ -80,6 +96,7 @@ line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
 margin: 0;
+margin-left: auto;
 }
 
 
@@ -90,9 +107,8 @@ font-size: 56px;
 line-height: 1.1;
 /* or 107% */
 letter-spacing: 0.02em;
+padding-top: 192px;
 margin-top: 0;
-
-
 }
 .orderbtn {
     color: #fff;
@@ -107,14 +123,24 @@ letter-spacing: 0.04em;
 border-radius: 4px;
 padding: 16px 32px;
 min-width: 170px;
-margin-top: 0;
+margin-top: 64px;
 margin-bottom: 192px; 
 }
 
 
 .effectivesection {
     text-align: center;
+    margin-bottom: 120px;
 background-color: var(--main-text-color)
+}
+
+.block {
+    display: flex;
+    height: 72px;
+}
+.blockwdt {
+    width: 264px;
+    margin-right: 24px;
 }
 
 .maintext{
@@ -154,28 +180,32 @@ margin-top: 0;
 margin-bottom: 72px;
 }
 .imagesforquestion{
-    margin-top: 0;
+display: flex;
 margin-bottom: 120px;
+margin-top: 0;
+margin-right: 24px;
+}
+.imagesforquestion .item:last-child{
+    margin-right: 0;
 }
 .cloud {
     background-color: var(--cloud-text-color);
-    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
-.cloud.text{
+.cloudtext{
     color: var(--main-text-color);
     background-color: var(--cloud-text-color);
     font-weight: 600;
 font-size: 36px;
 line-height: 1.1;
 /* identical to box height, or 111% */
-text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-margin-top: 0;
-margin-bottom: 0;
+padding-top: 120px;
+margin-bottom: 72px;
+text-align: center;
 }
 
 
@@ -202,8 +232,11 @@ letter-spacing: 0.02em;
 .botimages {
     padding-top: 0;
 padding-bottom: 120px;
-
-
+display: flex;
+margin-right: 156px;
+margin-left: 156px;
+width: 1056px;
+text-align: center;
 }
 
 
