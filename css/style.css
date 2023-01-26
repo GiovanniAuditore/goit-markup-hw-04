@@ -35,23 +35,17 @@ a:link {
 
 }
 
-.buttons, .address {
-    display: flex;
-    flex-direction: row;
-}
-.buttons li {
-   margin-right: 40px;
-}
-
-.buttons.mr {
+x
+.buttons .item:last-child{
     margin-right: 0;
 }
 
 
 
-    .site-nav {
+    .site-nav, .buttons {
         display: flex;
         align-items: center;
+        flex-direction: row;
     }
     .site-nav .item:last-child{
         margin-right: 0;
@@ -97,6 +91,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 margin: 0;
 margin-left: auto;
+gap: 40px;
 }
 
 
@@ -143,6 +138,9 @@ background-color: var(--main-text-color)
     margin-right: 24px;
 }
 
+.block .item:last-child{
+    margin-right: 0;
+}
 .maintext{
     background-color: #fff;
     color:var(--main-text-color) ;
@@ -180,7 +178,7 @@ margin-top: 0;
 margin-bottom: 72px;
 }
 .imagesforquestion{
-display: flex;
+display: inline-flex;
 margin-bottom: 120px;
 margin-top: 0;
 margin-right: 24px;
@@ -233,10 +231,11 @@ letter-spacing: 0.02em;
     padding-top: 0;
 padding-bottom: 120px;
 display: flex;
-margin-right: 156px;
-margin-left: 156px;
-width: 1056px;
+flex-wrap: wrap;
 text-align: center;
+gap: 24px;
+width: 1169px;
+/*Я змінив ширину цієї секції тому що інакше не влазило*/
 }
 
 
@@ -293,12 +292,18 @@ height: 72px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-text-color);
+    margin-right: 77px;
 }
 
 .webp {
 color: var(--sec-text-color);
 }
 
+
+.site-navp, .buttonsp, .addressp{
+    display: flex;
+    align-items: center;
+    } 
 .studiop{
     background-color: #fff;
     color: var(--main-text-color);
@@ -317,7 +322,12 @@ font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
+margin-right: 40px;
 }
+.buttonsp .item:last-child{
+    margin-right: 0;
+}
+
 .addressp {
     background-color: #fff;
     color: var(--text-text-color);
@@ -325,10 +335,9 @@ font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
-margin: 0;
+margin-left: auto;
+gap: 40px;
 }
-
-
 
 .buttonstack {
     color: var(--sec-text-color);
@@ -336,16 +345,25 @@ margin: 0;
     font-weight: 600;
     font-family: inherit;
 font-size: 16px;
+padding: 8px 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
+justify-content: center;
 align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
 box-sizing: border-box;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
-
+display: flex;
+align-items: center;
+text-align: center;
 }
+
+.btnmr {
+    margin-right: 80px;
+}
+
 
 .buttonstack:hover {
     color: #ffffff;
