@@ -32,25 +32,23 @@ ul {
 
 a:link { 
     text-decoration: none; 
-
-}
-
-x
-.buttons .item:last-child{
-    margin-right: 0;
+color: #434455;
 }
 
 
 
-    .site-nav, .buttons {
+
+    .site-nav, .buttons, .address {
         display: flex;
         align-items: center;
         flex-direction: row;
     }
-    .site-nav .item:last-child{
-        margin-right: 0;
-    }
+    
 
+.site-nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .logo{
     font-family: 'Raleway';
     font-weight: 800;
@@ -62,6 +60,8 @@ x
     background-color: #fff;
     color: var(--main-text-color);
     margin-right: 70px;
+
+
 }
 .web {
     color: var(--sec-text-color);
@@ -70,6 +70,7 @@ x
 .logo.studio {
     color: var(--main-text-color);
 }
+
 
 .buttons {
     background-color: #fff;
@@ -80,8 +81,18 @@ font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
+margin: 0;
+padding-inline-start: 0;
+}
+
+.buttonstop {
 margin-right: 40px;
 }
+
+.buttons .item:last-child{
+    margin-right: 0;
+}
+
 .address {
     background-color: #fff;
     color: var(--text-text-color);
@@ -102,7 +113,7 @@ font-size: 56px;
 line-height: 1.1;
 /* or 107% */
 letter-spacing: 0.02em;
-padding-top: 192px;
+
 margin-top: 0;
 }
 .orderbtn {
@@ -118,29 +129,35 @@ letter-spacing: 0.04em;
 border-radius: 4px;
 padding: 16px 32px;
 min-width: 170px;
-margin-top: 64px;
-margin-bottom: 192px; 
+margin-top: 4px;
+
 }
 
 
 .effectivesection {
+    padding-top: 188px;
+padding-bottom: 188px;
     text-align: center;
     margin-bottom: 120px;
 background-color: var(--main-text-color)
 }
 
+
 .block {
     display: flex;
-    height: 72px;
+
 }
-.blockwdt {
-    width: 264px;
+.block {
+
     margin-right: 24px;
+    width: 264px;
 }
 
-.block .item:last-child{
+.buttons .item:last-child{
     margin-right: 0;
 }
+
+
 .maintext{
     background-color: #fff;
     color:var(--main-text-color) ;
@@ -159,23 +176,26 @@ font-size: 16px;
 line-height: 1.5;
 /* or 150% */
 letter-spacing: 0.02em;
-}
-.textmarginbot {
-    margin-top: 0;
 margin-bottom: 120px;
 }
+
+.questiontext {
+    font-size: 36px;
+}
+
 .question{
     background-color: #fff;
     color: var(--main-text-color);
     font-weight: 600;
-font-size: 36px;
 line-height: 1.1;
 /* identical to box height, or 111% */
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 margin-top: 0;
-margin-bottom: 72px;
+margin-bottom: 120px;
+width: 1128px;
+height: 412px;
 }
 .imagesforquestion{
 display: inline-flex;
@@ -183,8 +203,8 @@ margin-bottom: 120px;
 margin-top: 0;
 margin-right: 24px;
 }
-.imagesforquestion .item:last-child{
-    margin-right: 0;
+.imagesforquestion .item + .item {
+    margin-left: 24px;
 }
 .cloud {
     background-color: var(--cloud-text-color);
