@@ -28,6 +28,8 @@ body{
 }
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0; 
 }
 
 a:link { 
@@ -83,15 +85,9 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 margin: 0;
 padding-inline-start: 0;
+gap: 40px;
 }
 
-.buttonstop {
-margin-right: 40px;
-}
-
-.buttons .item:last-child{
-    margin-right: 0;
-}
 
 .address {
     background-color: #fff;
@@ -130,15 +126,13 @@ border-radius: 4px;
 padding: 16px 32px;
 min-width: 170px;
 margin-top: 4px;
-
 }
 
 
 .effectivesection {
-    padding-top: 188px;
-padding-bottom: 188px;
+    padding-top: 192px;
+padding-bottom: 192px;
     text-align: center;
-    margin-bottom: 120px;
 background-color: var(--main-text-color)
 }
 
@@ -148,13 +142,17 @@ background-color: var(--main-text-color)
 
 }
 .block {
-
-    margin-right: 24px;
-    width: 264px;
+    padding-top: 120px;
+padding-bottom: 120px;
+gap: 24px;
 }
 
+.blockwdt {
+    height: 104px;
+}
 .buttons .item:last-child{
     margin-right: 0;
+    width: 264px;
 }
 
 
@@ -166,7 +164,6 @@ font-size: 20px;
 line-height: 1.2;
 /* identical to box height, or 120% */
 letter-spacing: 0.02em;
-margin-top: 0;
 margin-bottom: 8px;
 }
 .minortext{
@@ -176,11 +173,14 @@ font-size: 16px;
 line-height: 1.5;
 /* or 150% */
 letter-spacing: 0.02em;
-margin-bottom: 120px;
 }
+
+
+
 
 .questiontext {
     font-size: 36px;
+    margin-bottom: 72px;
 }
 
 .question{
@@ -193,19 +193,17 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 margin-top: 0;
-margin-bottom: 120px;
 width: 1128px;
 height: 412px;
+
 }
 .imagesforquestion{
 display: inline-flex;
-margin-bottom: 120px;
 margin-top: 0;
-margin-right: 24px;
+gap: 24px;  
+padding-bottom: 120px;
 }
-.imagesforquestion .item + .item {
-    margin-left: 24px;
-}
+
 .cloud {
     background-color: var(--cloud-text-color);
     padding-left: 15px;
@@ -227,7 +225,7 @@ text-align: center;
 }
 
 
-.cloud.name {
+.botimages.name {
     color: var(--main-text-color);
     background-color: #fff;
     font-weight: 600;
@@ -237,7 +235,7 @@ line-height: 1.2;
 text-align: center;
 letter-spacing: 0.02em;
 }
-.cloud.job {
+.botimages.job {
     color: var(--text-text-color);
     background-color: #fff;
 font-size: 16px;
@@ -248,13 +246,10 @@ letter-spacing: 0.02em;
 }
 
 .botimages {
-    padding-top: 0;
-padding-bottom: 120px;
 display: flex;
 flex-wrap: wrap;
 text-align: center;
 gap: 24px;
-width: 1169px;
 /*Я змінив ширину цієї секції тому що інакше не влазило*/
 }
 
@@ -370,6 +365,8 @@ gap: 40px;
     gap: 24px;
 }
 
+
+
 .buttonstack {
     color: var(--sec-text-color);
     background-color: var(--port-button-bg);
@@ -412,12 +409,14 @@ gap: 48px 24px;
     flex-basis: auto;
 }
 
-.images.name {
+.imagesbasis.name {
+
     color: var(--main-text-color);
     background-color: #fff;
     font-weight: 600;
-font-size: 20px;
+    font-size: 20px;
 line-height: 1.2;
+
 /* identical to box height, or 120% */
 letter-spacing: 0.02em;
 }
