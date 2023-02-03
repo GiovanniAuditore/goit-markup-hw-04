@@ -320,9 +320,14 @@ color: var(--sec-text-color);
     align-items: center;
     } 
 
+
     .site-navp {
-        margin-bottom: 96px;
+padding-top: 24px;
+padding-bottom: 24px;
+margin-bottom: 96px;
+border-bottom: 1px solid var(--text-text-color);
     }
+
 .studiop{
     background-color: #fff;
     color: var(--main-text-color);
@@ -405,20 +410,14 @@ padding: 0;
 gap: 48px 24px;
     }
 
-.imagesbasis{
-    flex-basis: auto;
-}
 
-.imagesbasis.name {
 
+.name {
     color: var(--main-text-color);
     background-color: #fff;
     font-weight: 600;
     font-size: 20px;
 line-height: 1.2;
-
-/* identical to box height, or 120% */
-letter-spacing: 0.02em;
 }
 .images.description {
     color: var(--text-text-color);
@@ -447,6 +446,15 @@ background-blend-mode: soft-light;
 mix-blend-mode: normal;
 }
 
+.imagesdiv{
+    padding-top: 32px;
+    padding-bottom: 32px;
+padding-left: 16px;
+padding-right: 16px;
+border-left: 16px;
+background-repeat: 54px;
+padding-bottom: 64px;
+}
 
 .footlogop{
     color: var(--cloud-text-color);
