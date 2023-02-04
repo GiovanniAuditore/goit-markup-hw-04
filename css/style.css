@@ -23,6 +23,13 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
+
+.containertop {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
 body{
     font-family: "Roboto";
 }
@@ -47,9 +54,10 @@ color: #434455;
     }
     
 
-.site-nav {
+.containertop {
     padding-top: 24px;
     padding-bottom: 24px;
+    align-items: center;
 }
 .logo{
     font-family: 'Raleway';
@@ -141,15 +149,16 @@ background-color: var(--main-text-color)
     display: flex;
 
 }
-.block {
+
+.textmarginbot{
     padding-top: 120px;
 padding-bottom: 120px;
+}
+.block {
+
 gap: 24px;
 }
 
-.blockwdt {
-    height: 104px;
-}
 .buttons .item:last-child{
     margin-right: 0;
     width: 264px;
@@ -253,17 +262,24 @@ gap: 24px;
 /*Я змінив ширину цієї секції тому що інакше не влазило*/
 }
 
-
-.foot{
+.containerfoot{
     background-color: var(--main-text-color);
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 156px;
-    padding-right: 1020px;
 }
 
+
+.colorfoot{
+    background-color: var(--main-text-color);
+}
 .footlogo {
-color: var(--cloud-text-color);
+
 background-color: #2E2F42;
 margin-top: 0;
 margin-bottom: 16px;
@@ -320,12 +336,14 @@ color: var(--sec-text-color);
     align-items: center;
     } 
 
+.containertop {
+    border-bottom: 1px solid var(--text-text-color);
+}
 
     .site-navp {
 padding-top: 24px;
 padding-bottom: 24px;
-margin-bottom: 96px;
-border-bottom: 1px solid var(--text-text-color);
+
     }
 
 .studiop{
@@ -407,7 +425,7 @@ text-align: center;
         flex-wrap: wrap;
 margin: 0;
 padding: 0;
-gap: 48px 24px;
+gap: 48px 21px;
     }
 
 
@@ -418,14 +436,18 @@ gap: 48px 24px;
     font-weight: 600;
     font-size: 20px;
 line-height: 1.2;
+margin-top: 0;
+margin-bottom: 8px;
 }
-.images.description {
+.description {
     color: var(--text-text-color);
     background-color: #fff;
 font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
+margin-top: 0;
+margin-bottom: 0;
 }
 .images.text {
     color: var(--cloud-text-color);
@@ -453,8 +475,13 @@ padding-left: 16px;
 padding-right: 16px;
 border-left: 16px;
 background-repeat: 54px;
-padding-bottom: 64px;
+
 }
+
+.imagesbasis{
+border: 1px solid;
+}
+
 
 .footlogop{
     color: var(--cloud-text-color);
