@@ -55,6 +55,7 @@ color: #434455;
     padding-top: 24px;
     padding-bottom: 24px;
     align-items: center;
+    margin-bottom: 0;
 }
 .logo{
     font-family: 'Raleway';
@@ -152,10 +153,12 @@ background-color: var(--main-text-color)
 padding-bottom: 120px;
 }
 .block {
-
 gap: 24px;
 }
 
+.blockwdt{
+    width: 264px;
+}
 .buttons .item:last-child{
     margin-right: 0;
     width: 264px;
@@ -187,6 +190,7 @@ letter-spacing: 0.02em;
 .questiontext {
     font-size: 36px;
     margin-bottom: 72px;
+    margin-top: 0;
 }
 
 .question{
@@ -199,22 +203,17 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 margin-top: 0;
-width: 1128px;
-height: 412px;
-
+padding-bottom: 120px;
 }
 .imagesforquestion{
 display: inline-flex;
-margin-top: 0;
 gap: 24px;  
-padding-bottom: 120px;
 }
 
 .cloud {
     background-color: var(--cloud-text-color);
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    padding-top: 120px;
+padding-bottom: 120px;
 }
 .cloudtext{
     color: var(--main-text-color);
@@ -225,30 +224,30 @@ line-height: 1.1;
 /* identical to box height, or 111% */
 letter-spacing: 0.02em;
 text-transform: capitalize;
-padding-top: 120px;
-margin-bottom: 72px;
 text-align: center;
+margin-top: 0;
 }
 
-
-.botimages.name {
+.name {
     color: var(--main-text-color);
-    background-color: #fff;
+    background-color: var(--cloud-text-color);
     font-weight: 600;
 font-size: 20px;
 line-height: 1.2;
 /* identical to box height, or 120% */
 text-align: center;
 letter-spacing: 0.02em;
+margin-top: 0;
 }
-.botimages.job {
+.job {
     color: var(--text-text-color);
-    background-color: #fff;
+    background-color:var(--cloud-text-color);
 font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 text-align: center;
 letter-spacing: 0.02em;
+margin-bottom: 0;
 }
 
 .botimages {
@@ -258,6 +257,15 @@ text-align: center;
 gap: 24px;
 /*Я змінив ширину цієї секції тому що інакше не влазило*/
 }
+
+.paddingcloud{
+    padding-top: 32px;
+    padding-bottom: 32px;
+padding-left: 16px;
+padding-right: 16px;
+border: 1px solid #E7E9FC;
+}
+
 
 .containerfoot{
     background-color: var(--main-text-color);
@@ -276,7 +284,7 @@ gap: 24px;
     background-color: var(--main-text-color);
 }
 .footlogo {
-
+color: #F4F4FD;
 background-color: #2E2F42;
 margin-top: 0;
 margin-bottom: 16px;
@@ -300,10 +308,8 @@ font-size: 16px;
 line-height: 1.5;
 /* or 150% */
 letter-spacing: 0.02em;
-
 /* CORNFLOWER */
 color: #E7E9FC;
-
 width: 264px;
 height: 72px;
 }
@@ -334,10 +340,12 @@ color: var(--sec-text-color);
     text-align: center;
     } 
 
-.containertop {
+.containertopp {
     border-bottom: 1px solid #E7E9FC;
     align-items: center;
     text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-bottom: 96px;
 }
 
@@ -430,7 +438,7 @@ gap: 48px 24px;
     height: auto;
 }
 
-.name {
+.namep {
     color: var(--main-text-color);
     background-color: #fff;
     font-weight: 600;
