@@ -39,7 +39,7 @@ ul {
     margin: 0; 
 }
 
-a:link { 
+a:link  { 
     text-decoration: none; 
 color: #434455;
 }
@@ -274,7 +274,6 @@ border: 1px solid #E7E9FC;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -283,9 +282,8 @@ border: 1px solid #E7E9FC;
 .colorfoot{
     background-color: var(--main-text-color);
 }
-.footlogo {
-color: #F4F4FD;
-background-color: #2E2F42;
+.footlogo {    
+
 margin-top: 0;
 margin-bottom: 16px;
 font-family: 'Raleway';
@@ -300,6 +298,11 @@ text-transform: uppercase;
 .footlogo.web {
 color: var(--sec-text-color);
 background-color: #2E2F42;
+}
+
+.studio{
+    color: var(--cloud-text-color);
+    background-color: #2E2F42;
 }
 
 .foottext {
@@ -346,7 +349,6 @@ color: var(--sec-text-color);
     text-align: center;
     padding-top: 24px;
     padding-bottom: 24px;
-    margin-bottom: 96px;
 }
 
 
@@ -368,10 +370,7 @@ font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 letter-spacing: 0.02em;
-margin-right: 40px;
-}
-.buttonsp .item:last-child{
-    margin-right: 0;
+gap: 40px;
 }
 
 .addressp {
@@ -392,7 +391,10 @@ gap: 40px;
     gap: 24px;
 }
 
-
+.herop{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 
 .buttonstack {
     color: var(--sec-text-color);
@@ -485,8 +487,6 @@ border: 1px solid #E7E9FC;
 }
 
 .footlogop{
-    color: var(--cloud-text-color);
-    background-color: #2E2F42;
     margin-top: 0;
     margin-bottom: 16px;
     font-family: 'Raleway';
@@ -498,18 +498,16 @@ border: 1px solid #E7E9FC;
     text-transform: uppercase;
 }
 
-.footp{
-    background-color: var(--main-text-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
-
+.studiop{
+    color: var(--cloud-text-color);
+    background-color: #2E2F42;
 }
-
 
 .colorfooterlogo {
 color: var(--sec-text-color);
-background-color: #2E2F42;
-
+background-color: var(--main-text-color);
+padding-top: 100px;
+padding-bottom: 100px;
 }
 
 
@@ -519,7 +517,6 @@ font-size: 16px;
 line-height: 1.5;
 /* or 150% */
 letter-spacing: 0.02em;
-
 /* CORNFLOWER */
 color: #E7E9FC;
 width: 264px;
