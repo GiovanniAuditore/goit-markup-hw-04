@@ -151,7 +151,8 @@ color: #404bbf
     border-radius: 2px;
     background-color: #404bbf;
     position: absolute;
-    border-bottom: -px;
+    left: 0; 
+    bottom: -1px;
 }
 
 .address {
@@ -229,7 +230,9 @@ gap: 24px;
     background: var(--CLOUD, #F4F4FD);
     height: 112px;
     flex-shrink: 0;
-    display: flex; align-items: center; justify-content: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
     margin-bottom: 8px;
 }
 
@@ -360,9 +363,10 @@ width: calc((100%-72px)/4);
 .paddingcloud{
     padding-top: 32px;
     padding-bottom: 32px;
-padding-left: 16px;
-padding-right: 16px;
-border: 1px solid #E7E9FC;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid #E7E9FC;
+
 }
 
 
@@ -381,7 +385,7 @@ border: 1px solid #E7E9FC;
 .social-icon{
     width: 40px;
     height: 40px;
-    
+    border-radius: 0px 0px 4px 4px;
 }
 
 .social-icon-link{
