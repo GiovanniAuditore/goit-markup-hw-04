@@ -3,6 +3,18 @@
 html {
     box-sizing: border-box;
 }
+
+
+
+*:hover,:focus{
+
+    transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
 *,
 *::before,
 *::after {
@@ -24,6 +36,19 @@ html {
     margin-right: auto;
 }
 
+.container-bottom{
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: baseline;
+}
+
+
+
+
 .containertop {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -32,6 +57,16 @@ html {
 
 body{
     font-family: "Roboto";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
 }
 ul {
     list-style: none;
@@ -111,7 +146,7 @@ color: #434455;
     border-radius: 2px;
     background-color: #4D5AE5;
     position: absolute;
-    bottom: -28px;
+    border-bottom: -2px;
 }
 
 .address {
@@ -297,7 +332,6 @@ margin-bottom: 0;
 
 .botimages {
 display: flex;
-flex-wrap: wrap;
 text-align: center;
 gap: 24px;
 
@@ -306,7 +340,7 @@ gap: 24px;
 
 .employeecard {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
+width: calc((100%-72px)/4);
 }
 
 
@@ -363,10 +397,7 @@ border: 1px solid #E7E9FC;
 }
 
 .containerfoot{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     background-color: var(--main-text-color);
     padding-left: 15px;
     padding-right: 15px;
@@ -629,3 +660,8 @@ height: 72px;
 .imagesbasis:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.logo-bottom{
+    margin-right: 120px;
+}
+
