@@ -44,10 +44,10 @@ a:link  {
 color: #434455;
 }
 
-    .site-nav, .buttons, .address {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
+    .site-nav, .button-list, .address {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     }
     
 
@@ -80,20 +80,39 @@ color: #434455;
 }
 
 
-.buttons {
+.button-list{
     background-color: #fff;
     color:var(--main-text-color);
     font-family: inherit;
-font-weight: 600;
-font-size: 16px;
-line-height: 1.5;
-/* identical to box height, or 150% */
-letter-spacing: 0.02em;
-margin: 0;
-padding-inline-start: 0;
-gap: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.02em;
+    margin: 0;
+    padding-inline-start: 0;
+    gap: 40px;
 }
 
+
+.button{
+    position: relative;
+}
+
+.button.active::after{
+    color: #404BBF;
+}
+
+.button.active::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #4D5AE5;
+    position: absolute;
+    bottom: -28px;
+}
 
 .address {
     background-color: #fff;
@@ -137,9 +156,10 @@ margin-top: 4px;
 
 .effectivesection {
     padding-top: 192px;
-padding-bottom: 192px;
+    padding-bottom: 192px;
     text-align: center;
-background-color: var(--main-text-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)),
+    url(../images/people-office\ 1.png)
 }
 
 
@@ -156,14 +176,32 @@ padding-bottom: 120px;
 gap: 24px;
 }
 
+
+.block-icon {
+    width: 264px;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    height: 112px;
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 8px;
+}
+
+
 .blockwdt{
     width: 264px;
+    
 }
 .buttons .item:last-child{
     margin-right: 0;
     width: 264px;
 }
 
+.block-icon-item{
+    width: 264px;
+    display: flex; align-items: center; justify-content: center;
+}
 
 .maintext{
     background-color: #fff;
@@ -208,7 +246,11 @@ padding-bottom: 120px;
 }
 .imagesforquestion{
 display: inline-flex;
-gap: 24px;  
+gap: 24px; }
+
+
+.imagesforquestioncard{
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .cloud {
@@ -258,8 +300,15 @@ display: flex;
 flex-wrap: wrap;
 text-align: center;
 gap: 24px;
+
 /*Я змінив ширину цієї секції тому що інакше не влазило*/
 }
+
+.employeecard {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+}
+
 
 .paddingcloud{
     padding-top: 32px;
@@ -270,7 +319,54 @@ border: 1px solid #E7E9FC;
 }
 
 
+
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    
+    margin-top: 8px;
+}
+
+
+.social-icon{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.social-icon-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: #F4F4FD;
+
+    background-color: #4D5AE5;
+    border-radius: 50%;
+
+    
+}
+
+.social-icon-link:hover, :focus{
+    background-color: #404BBF;
+
+}
+
+.social-icon-color{
+    fill: #F4F4FD;
+}
+
 .containerfoot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--main-text-color);
     padding-left: 15px;
     padding-right: 15px;
@@ -362,7 +458,7 @@ color: var(--sec-text-color);
 .buttonsp {
     background-color: #fff;
     color: var(--main-text-color);
-    font-weight: 600;
+    font-weight: 500;
     font-family: inherit;
 font-size: 16px;
 line-height: 1.5;
@@ -397,7 +493,7 @@ gap: 40px;
 .buttonstack {
     color: var(--sec-text-color);
     background-color: var(--port-button-bg);
-    font-weight: 600;
+    font-weight: 500;
     font-family: inherit;
 font-size: 16px;
 padding: 8px 16px;
@@ -432,11 +528,15 @@ padding: 0;
 gap: 48px 24px;
     }
 
+
+
 .imagesbasis.img{
     display:block;
     max-width: 100%;
     height: auto;
 }
+
+
 
 .namep {
     color: var(--main-text-color);
@@ -519,4 +619,13 @@ letter-spacing: 0.02em;
 color: #E7E9FC;
 width: 264px;
 height: 72px;
+}
+
+.imagesbasis {
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.imagesbasis:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
