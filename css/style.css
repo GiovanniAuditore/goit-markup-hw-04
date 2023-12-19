@@ -142,7 +142,7 @@ a:link  {
 .button{
     position: relative;
     background-color: #fff;
-    color:var(--main-text-color);
+    color: black;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
