@@ -51,8 +51,10 @@ html {
 
 
 .containertop {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
+    align-items: center;
+    text-align: center;
+
     box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -77,7 +79,7 @@ ul {
 
 a:link  { 
     text-decoration: none; 
-color: #404bbf
+    padding: 24px 0;
 }
 
     .site-nav, .button-list, .address {
@@ -86,17 +88,26 @@ color: #404bbf
     flex-direction: row;
     }
     
-    .site-nav, .button-list, .address{
+    .addresslink{
+        background-color: #fff;
+        color: var(--text-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .makeflex{
+        display: flex;
+    }
+
+    .button-item{
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.containertop {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    align-items: center;
-    margin-bottom: 0;
-}
+
 .logo{
     font-family: 'Raleway';
     font-weight: 800;
@@ -121,14 +132,7 @@ color: #404bbf
 
 
 .button-list{
-    background-color: #fff;
-    color:var(--main-text-color);
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    /* identical to box height, or 150% */
-    letter-spacing: 0.02em;
+
     margin: 0;
     padding-inline-start: 0;
     gap: 40px;
@@ -137,11 +141,22 @@ color: #404bbf
 
 .button{
     position: relative;
+    background-color: #fff;
+    color:var(--main-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.02em;
 }
 
-.button.active::after{
-    color: #404BBF;
+
+.button-item:hover{
+    color: var(--sec-text-color);
 }
+
+
 
 .button.active::after{
     content: "";
@@ -156,12 +171,7 @@ color: #404bbf
 }
 
 .address {
-    background-color: #fff;
-    color: var(--text-text-color);
-font-size: 16px;
-line-height: 1.5;
-/* identical to box height, or 150% */
-letter-spacing: 0.02em;
+
 margin: 0;
 margin-left: auto;
 gap: 40px;
@@ -241,11 +251,6 @@ gap: 24px;
     width: 264px;
     
 }
-.buttons .item:last-child{
-    margin-right: 0;
-    width: 264px;
-}
-
 .block-icon-item{
     width: 264px;
     display: flex; align-items: center; justify-content: center;
@@ -486,14 +491,6 @@ color: var(--sec-text-color);
     align-items: center;
     text-align: center;
     } 
-
-.containertopp {
-    border-bottom: 1px solid #E7E9FC;
-    align-items: center;
-    text-align: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
 
 
 .studiop{
