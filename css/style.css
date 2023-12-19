@@ -54,8 +54,10 @@ html {
     border-bottom: 1px solid #E7E9FC;
     align-items: center;
     text-align: center;
+    
 
     box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    
 }
 
 body{
@@ -79,7 +81,7 @@ ul {
 
 a:link  { 
     text-decoration: none; 
-    padding: 24px 0;
+
 }
 
     .site-nav, .button-list, .address {
@@ -98,12 +100,22 @@ a:link  {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .makeflex{
+    .address, .addresslink{
         display: flex;
     }
 
-    .button-item{
+    .addresslink{
+        margin-right: 20px;
+    }
 
+    .contact-list{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .button-item{
+        padding: 24px 0;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -142,7 +154,7 @@ a:link  {
 .button{
     position: relative;
     background-color: #fff;
-    color: black;
+    color: var(--main-text-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -202,6 +214,15 @@ border-radius: 4px;
 padding: 16px 32px;
 min-width: 170px;
 margin-top: 4px;
+transition: background-color 250ms cubic-bezier (0.165, 0.84, 0.44, 1);
+
+}
+
+.orderbtn:hover,
+.orderbtn:focus{
+    border-radius: 4px;
+    background: var(--OCEAN, #404BBF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -210,18 +231,31 @@ margin-top: 4px;
     padding-bottom: 192px;
     text-align: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office\ 1.png);
+    url(../images/people-office1.png);
     max-width: 1440px;
     background-repeat: no-repeat; 
     background-position: center;
     background-size: cover;
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 
 .block {
     display: flex;
 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .textmarginbot{
@@ -250,10 +284,6 @@ gap: 24px;
 .blockwdt{
     width: 264px;
     
-}
-.block-icon-item{
-    width: 264px;
-    display: flex; align-items: center; justify-content: center;
 }
 
 .maintext{
@@ -361,19 +391,20 @@ box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .employeecard {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-width: calc((100%-72px)/4);
+    width: calc((100% - 72px)/4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 
 .paddingcloud{
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border: 1px solid #E7E9FC;
-
 }
 
+
+.our-portfolio{
+    margin-top: 120px;
+}
 
 
 
@@ -390,7 +421,6 @@ width: calc((100%-72px)/4);
 .social-icon{
     width: 40px;
     height: 40px;
-    border-radius: 0px 0px 4px 4px;
 }
 
 .social-icon-link{
@@ -405,7 +435,8 @@ width: calc((100%-72px)/4);
 
     background-color: #4D5AE5;
     border-radius: 50%;
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            
     
 }
 
@@ -689,7 +720,7 @@ height: 72px;
 }
 
 .p-bottom{
-    color: aliceblue;
+    color: #;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
