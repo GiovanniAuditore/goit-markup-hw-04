@@ -487,3 +487,25 @@ margin-bottom: 16px;
 .footer .icon {
     fill: #f4f4fd;
 }
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(46, 47, 66, 0.4);
+
+    transition: opacity 300ms ease-in, visibility 300ms ease-in;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+
+.backdrop.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
