@@ -661,10 +661,11 @@ gap: 24px;
 
 .form-label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     color: var(--LIGHT-SLATE, #8E8F99);
     font-size: 12px;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
 }
 
 .form-field {
