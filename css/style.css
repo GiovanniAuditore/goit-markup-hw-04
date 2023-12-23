@@ -702,6 +702,13 @@ gap: 24px;
 }
 
 
+
+
+.form-icon:hover, .form-icon:focus{
+    fill: #ffffff
+}
+
+
 .form-input:focus + .form-icon {
     fill: #4D5AE5;
 }
@@ -748,7 +755,7 @@ gap: 24px;
     letter-spacing: -0.02em;
     color: var(--LIGHT-SLATE, #8E8F99);
     user-select: none;
-    margin-bottom: 24px;
+    
 }
 
 
