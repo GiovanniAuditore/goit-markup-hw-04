@@ -537,9 +537,14 @@ gap: 24px;
 
 .subscribe-form-btn{
     display: flex;
+    border: none; 
     align-items: center;
+    min-width: 165px;
+    height: 40px;
+    cursor: pointer;
     gap: 16px;
     padding: 8px 24px;
+    justify-content: center; 
     color: var(--WHITE, #FFF);
     text-align: center;
     font-weight: 500;
@@ -552,7 +557,9 @@ gap: 24px;
 
 
 
-.subscribe-form-icon{}
+.subscribe-form-icon{
+    margin-left: 16px; 
+}
 
 /* Modal window */
 
