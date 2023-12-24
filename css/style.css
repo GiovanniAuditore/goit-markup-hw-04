@@ -638,11 +638,8 @@ gap: 24px;
 
 .modal-btn:hover, .modal-btn:focus{
     background-color: #404bbf;
-    border: none; 
-}
-
-.modal-btn-icon:hover, .modal-btn-icon:focus{
-    fill: #ffffff
+    border: none;
+    fill: #ffffff 
 }
 
 
