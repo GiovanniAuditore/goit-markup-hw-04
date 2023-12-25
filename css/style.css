@@ -716,7 +716,7 @@ gap: 24px;
 }
 
 
-.form-input:focus + .form-icon {
+.form-input:checked + .form-label {
     fill: #4D5AE5;
 }
 
