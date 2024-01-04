@@ -643,6 +643,15 @@ gap: 24px;
 }
 
 
+.modal-btn:focus{
+    background-color: #404bbf;
+    border: none; 
+
+}
+
+
+
+
 
 .modal-caption{
     color: var(--NAVY-BLUE, #2E2F42);
