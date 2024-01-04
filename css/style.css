@@ -803,6 +803,10 @@ opacity: 1;
 transform: scale(1);
 }
 
+.form-agreement-checkbox:checked{
+    border: none;
+}
+
 .form-agreement-link{
     color: var(--IRIS, #4D5AE5);
 
