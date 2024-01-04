@@ -798,6 +798,7 @@ gap: 24px;
     background-color: #404bbf; 
     border-color:  #404BBF;
     fill: #f4f4fd;
+    border: none;
 }
 
 .form-agreement-icon{
