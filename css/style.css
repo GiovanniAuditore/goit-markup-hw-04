@@ -666,10 +666,12 @@ gap: 24px;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
 }
-
+.margin{
+    margin-bottom: 16px;
+}
 
 .form-wrapper{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .form-wrapper-comment{
