@@ -32,6 +32,8 @@ ul, ol {
 }
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .container {
@@ -224,6 +226,7 @@ color: #404BBF;
 
 
 
+
 /* Hero section */
 
 .hero-section {
@@ -327,6 +330,7 @@ color: #404BBF;
 }
 .about .list-item {
 width: calc((100% - 72px) / 4);
+width: 100%;
 }
 .about .icon-box {
     display: flex;
@@ -362,6 +366,52 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 }
 
+
+
+@media only screen and (max-width: 1158px) {
+    .about .list-item .icon-box {
+    display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about .list {
+        flex-direction: column;
+    }
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        .list-title {
+            text-align:center;
+        }
+        }
+
+
+        @media only screen and (max-width: 768px) {
+        .about .list-item {
+            width: 288px;
+            margin-bottom: 72px; 
+        }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1158px) {
+            .about .list {
+                
+              flex-wrap: wrap; /* Оборачиваем элементы на новую строку */
+              justify-content: space-between; /* Равномерно распределяем по ширине */
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1158px) {
+            .about .list-item {
+                width: calc((100% - 48px) / 2); /* Половина ширины с отступами между блоками */
+                margin-bottom: 24px; /* Добавляем отступ между строками */
+            }
+            }
+
+
+    
 /* Team section */
 
 .team-section {
@@ -426,6 +476,7 @@ padding-bottom: 120px;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    align-items: center;
 }
 
 
@@ -479,6 +530,7 @@ padding-bottom: 120px;
 .details .icon-list {
     display: flex;
     justify-content: center;
+    gap: 24px;
 }
 .team-member .icon-item {
     width: 40px;
