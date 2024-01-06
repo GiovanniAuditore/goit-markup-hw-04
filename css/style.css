@@ -212,6 +212,31 @@ color: #404BBF;
 }
 
 
+
+@media only screen and (max-width:1158px) {
+    .contacts .link {
+        color: var(--SLATE, #434455);
+
+        /* Small Text */
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px; /* 116.667% */
+        letter-spacing: 0.48px;
+        gap: 12px;
+        flex-direction: column;
+        display: block;
+    }
+}
+    
+
+@media only screen and (max-width:1158px) {
+    .contacts .list {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
 @media only screen and (max-width:767.98px) {
     .navigation{
             display: none;
@@ -368,6 +393,29 @@ letter-spacing: 0.02em;
 
 
 
+
+
+
+    @media only screen and (max-width: 1158px) {
+        .about .list-title { 
+            color: var(--NAVY-BLUE, #2E2F42);
+
+            /* Header 2 */
+            font-family: Roboto;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px; /* 111.111% */
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+            
+            
+        
+        }
+    }
+
+
+
 @media only screen and (max-width: 1158px) {
     .about .list-item .icon-box {
     display: none;
@@ -384,6 +432,7 @@ letter-spacing: 0.02em;
     @media only screen and (max-width: 768px) {
         .list-title {
             text-align:center;
+            
         }
         }
 
@@ -1240,7 +1289,7 @@ margin-bottom: 24px;
 }
 
 .mobile-menu-socials {
-    gap: 40px;
+    gap: 16px;
     display: inline-flex;
 }
 .mobile-menu-socials .socials-link {
@@ -1275,6 +1324,7 @@ margin-bottom: 24px;
     .web-footer-container{
         display: flex;
         gap: 72px 24px;
+        flex-wrap: wrap;
     }
 }
 
@@ -1393,12 +1443,7 @@ letter-spacing: 0.32px;
     justify-content: center; 
 }
 
-@media only screen and (min-width:768px) {
-    .web-footer-bottom{
-        width: 100%;
-        max-width: 453px;
-    }
-}
+
 
 .web-footer-label{
     width: 100%;
@@ -1412,7 +1457,7 @@ letter-spacing: 0.32px;
 }
 
 .web-footer-input{
-    width: 100%;
+    width: 264px;
     height: 40px;
     padding: 8px 16px;
 
