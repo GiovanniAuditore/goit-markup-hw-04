@@ -32,7 +32,7 @@ ul, ol {
 }
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -261,7 +261,7 @@ color: #404BBF;
     linear-gradient(to bottom, 
     rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob@1x.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -282,13 +282,63 @@ color: #404BBF;
     margin-bottom: 72px;
 }
 
+
+@media (min-resolution:192dpi) {
+    .hero-section{
+        background-image: 
+        linear-gradient(to bottom, 
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-officetab@2x.png);
+}
+}
+
+
 @media screen and (min-width:768px){
-    .hero-section-title{
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 1.07;
-        margin-bottom: 36px;
-        max-width: 496px;
+    .hero-section{
+        background-image: 
+        linear-gradient(to bottom, 
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-officetab@1x.png);
+}
+
+
+@media screen and (min-width:768px) and (min-resolution:192dpi){
+    .hero-section{
+        background-image: 
+        linear-gradient(to bottom, 
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-officetab@2x.png);
+    }
+}
+
+
+
+
+
+}
+
+@media screen and (min-width:1158px) and (min-resolution:192dpi){
+    .hero-section{
+        background-image: 
+        linear-gradient(to bottom, 
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office\ 1people-officedesk@2x.png);
+    }
+}
+
+
+
+@media screen and (min-width:1158px){
+    .hero-section{
+        background-image: 
+        linear-gradient(to bottom, 
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office\ 1people-officedesk@1x.png);
     }
 }
 
@@ -334,7 +384,7 @@ color: #404BBF;
 /* About section */
 
 .about {
-    padding-top: 120px;
+    padding-top: 96px;
     padding-bottom: 120px;
 }
 .visually-hidden {
@@ -351,7 +401,7 @@ color: #404BBF;
 }
 .about .list {
     display: flex;
-    gap: 24px;
+    gap: 48px 24px;
 }
 .about .list-item {
 width: calc((100% - 72px) / 4);
@@ -366,14 +416,7 @@ width: 100%;
         background: #F4F4FD;
         height: 112px;
         margin-bottom: 8px;
-        position: relative;
-}
-.about .icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+
 }
 .about .list-title {
     color: #2E2F42;
@@ -415,6 +458,12 @@ letter-spacing: 0.02em;
     }
 
 
+    @media only screen and (min-width: 768px) {
+        .about {
+            padding-top: 120px;
+        }
+        }
+
 
 @media only screen and (max-width: 1158px) {
     .about .list-item .icon-box {
@@ -438,11 +487,20 @@ letter-spacing: 0.02em;
 
 
         @media only screen and (max-width: 768px) {
-        .about .list-item {
+        .about .list {
+            gap: 72px;
             width: 288px;
-            margin-bottom: 72px; 
+        
         }
         }
+        
+
+        @media only screen and (max-width: 768px) {
+            .about .list-text {
+               font-weight: 500;
+            
+            }
+            }
 
         @media screen and (min-width: 768px) and (max-width: 1158px) {
             .about .list {
@@ -455,7 +513,7 @@ letter-spacing: 0.02em;
         @media screen and (min-width: 768px) and (max-width: 1158px) {
             .about .list-item {
                 width: calc((100% - 48px) / 2); /* Половина ширины с отступами между блоками */
-                margin-bottom: 24px; /* Добавляем отступ между строками */
+                
             }
             }
 
@@ -468,6 +526,7 @@ letter-spacing: 0.02em;
     padding-top: 96px;
     padding-bottom: 96px;
     gap: 24px;
+    
 
 
 
@@ -510,7 +569,8 @@ padding-bottom: 120px;
         margin-bottom: 72px;
 }
 .team-member {
-    width: 100%;
+    max-width: 264px;
+    max-height: 428px;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -524,8 +584,9 @@ padding-bottom: 120px;
 .team-section .list {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 72px;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -682,8 +743,7 @@ color: #2E2F42;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .image-box {
-    width: 360px;
-    height: 300px;
+
     position: relative;
     overflow: hidden;
 }
@@ -722,6 +782,18 @@ color: #2E2F42;
         letter-spacing: 0.32px;
 }
 
+
+@media only screen and (max-width: 1158px) {
+    .portfolio-list .list-text {
+        font-weight: 500;
+}
+}
+
+@media only screen and (max-width: 1158px) {
+    .portfolio-list .list-title  {
+        font-weight: 700;
+}
+}
 /* Footer */
 
 .footer .container {
@@ -950,7 +1022,7 @@ gap: 24px;
 .modal-btn:focus{
     background-color: #404bbf;
     border: none; 
-    fill: #2E2F42
+    fill: #ffffff
 
 }
 
@@ -1163,22 +1235,37 @@ transform: scale(1);
     }
 }
 
-
+@media only screen and (max-width:758px) {
+    .modal{
+        width: 288px;
+    height: 623px;
+    }
+}
 
 
 
 /*Phone menu*/
 
+
+.mob-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
 .menu-btn{
+    padding: 0;
     background-color: #fff;
     display: flex;
     text-align: center;
     margin-left: auto;
     border: none;
-
+    
 }
 
-@media screen and (min-width:320px){
+@media screen and (min-width:768px){
     .menu-btn{
         display: none;
     }
@@ -1268,6 +1355,7 @@ margin-bottom: 24px;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
     color: var(--SLATE, #434455);
+    text-decoration: none;
 }
 
 
@@ -1289,7 +1377,7 @@ margin-bottom: 24px;
 }
 
 .mobile-menu-socials {
-    gap: 16px;
+    gap: 40px;
     display: inline-flex;
 }
 .mobile-menu-socials .socials-link {
@@ -1298,6 +1386,12 @@ margin-bottom: 24px;
     background-color: #4d5ae5;
 }
 
+
+@media only screen and (min-width:758px) {
+    .mobile-menu{
+        display: none;
+    }
+}
 
 /*Mobile Footer*/
 
@@ -1386,10 +1480,9 @@ text-decoration: none;
     color: #FFF;
 
 /* Body Medium */
-font-family: Roboto;
+
 font-size: 16px;
-font-style: normal;
-font-weight: 500;
+font-weight: 400;
 line-height: 24px; /* 150% */
 letter-spacing: 0.32px;
 text-align: left;
