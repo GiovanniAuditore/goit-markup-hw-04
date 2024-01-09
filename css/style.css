@@ -1549,10 +1549,8 @@ text-align: left;
 
 
 @media only screen and (min-width: 1158px) {
-    .web-footer-socials{
-        
-        
-        margin-right: 80px;
+    .web-footer-mid{
+        margin-right: auto;
     }
 }
 
@@ -1596,7 +1594,7 @@ letter-spacing: 0.32px;
         max-width: 264px;
     }
 }
--for-footer
+
 
 .web-footer-input{
     width: 264px;
