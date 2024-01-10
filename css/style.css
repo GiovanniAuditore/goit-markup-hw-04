@@ -1309,8 +1309,11 @@ transform: scale(1);
     border: none;
     
 }
-
 .menu-btn-icon{
+    background-color: #fff;
+}
+
+.menu-btn-icon-mobile{
     fill: #2E2F42;
     width: 8px; 
     height: 8px; /* Задаем размер иконки */
