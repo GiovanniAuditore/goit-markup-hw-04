@@ -294,7 +294,7 @@ color: #404BBF;
     .hero-section-title{
         font-size: 56px;
         margin-bottom: 36px;
-
+        max-width: 496px;
 }
 }
 
@@ -1086,12 +1086,13 @@ gap: 24px;
 }
 
 .form-label {
-    display: block;
-    margin-bottom: 4px;
+    display: flex;
+
     color: var(--LIGHT-SLATE, #8E8F99);
     font-size: 12px;
     letter-spacing: 0.04em;
     line-height: 1.17;
+    align-items: center;
 }
 
 .form-field {
@@ -1198,9 +1199,16 @@ gap: 24px;
     flex-shrink: 0;
 }
 
-.form-label{
+.form-label-checkbox{
     display: flex;
+    margin-bottom: 4px;
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
+    align-items: center;
 }
+
 
 
 .checkbox:checked + .form-label .form-agreement-checkbox{
@@ -1294,13 +1302,20 @@ transform: scale(1);
 
 .menu-btn{
     padding: 0;
-    background-color: #fff;
+    background-color: #E7E9FC;
     display: flex;
     text-align: center;
     margin-left: auto;
     border: none;
     
 }
+
+.menu-btn-icon{
+    fill: #2E2F42;
+    width: 8px; 
+    height: 8px; /* Задаем размер иконки */
+}
+
 
 @media screen and (min-width:768px){
     .menu-btn{
@@ -1345,6 +1360,7 @@ transform: scale(1);
 
     border: 1px solid #E7E9FC;
     border-radius: 50%;
+    background-color: #E7E9FC;
 
 }
 
@@ -1446,7 +1462,7 @@ margin-bottom: 24px;
 
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
     .web-footer-container{
-        padding: 0 108px;
+        padding: 0 95px;
     }
 }
 
@@ -1488,6 +1504,8 @@ margin-bottom: 24px;
         margin-right: 120px;
     }
 }
+
+
 
 
 
@@ -1637,3 +1655,5 @@ font-weight: 500;
 line-height: 24px; /* 150% */
 letter-spacing: 0.64px;
 }
+
+
